@@ -85,7 +85,6 @@ public class GameController : MonoBehaviour
 	IEnumerator EndGameEnum()
 	{
 		yield return new WaitForSeconds(3);
-		//Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
 		SceneManager.LoadScene("LoadScene");
 	}
 

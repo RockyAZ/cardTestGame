@@ -38,14 +38,12 @@ public class UITableController : MonoBehaviour
     }
     void TableSelectionCloseBtn()
     {
-		//tableUIObj.SetActive(false);
 		tableUIObj.SetActive(true);
 		tableAnimator.Play("OffTableAnimUI");
     }
 
     public void ActivateUI()
     {
-        //tableUIObj.SetActive(true);
         tableAnimator.Play("OnTableAnimUI");
     }
 
