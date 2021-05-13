@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MainAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: a561a82b8c6f6294abbc66ada7e1d1d2, type: 3}
+    totalSpriteSurfaceArea: 9096018
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 7e4e312075c03664a86e27a4cfd21463, type: 3}
+  - {fileID: 21300000, guid: adc7ee21147da1743901a32b964a4991, type: 3}
+  - {fileID: 21300000, guid: aa0bab13dda5790499d6061807e6f47e, type: 3}
+  - {fileID: 21300000, guid: 87585355017b5b441a91792cb83b5a8d, type: 3}
+  - {fileID: 21300000, guid: 45eac9160c119db4d9b84312eeeee0f7, type: 3}
+  - {fileID: 21300000, guid: 84bf90a6d468fe640a623876ffba73f3, type: 3}
+  - {fileID: 21300000, guid: 06043c79217d296499211b0a75032c16, type: 3}
+  - {fileID: 21300000, guid: 2e3f92e98df1ee84290bafb741c7ccca, type: 3}
+  - {fileID: 21300000, guid: 6d9d8a0f4ecd2d04588f878bfbd6a300, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - header
+  - b1
+  - 2D
+  - 2H
+  - 2C
+  - 2S
+  - Back
+  - table
+  - table2
+  m_Tag: MainAtlas
+  m_IsVariant: 0
