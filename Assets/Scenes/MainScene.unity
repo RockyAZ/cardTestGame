@@ -954,6 +954,7 @@ MonoBehaviour:
   cardPrefab: {fileID: 3785248828872722514, guid: 1bea9896d0e384840b580699f1ec5356,
     type: 3}
   table: {fileID: 405525078}
+  cardAmount: 13
   cardSpeed: 5
 --- !u!114 &580435860
 MonoBehaviour:
@@ -1904,7 +1905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.0014648, y: -185.2998}
+  m_AnchoredPosition: {x: 0.0014648, y: -185.25}
   m_SizeDelta: {x: 1441.7517, y: 369.44147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1803153114
@@ -1964,7 +1965,7 @@ PrefabInstance:
     - target: {fileID: 3785248828872722516, guid: 1bea9896d0e384840b580699f1ec5356,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.05
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3785248828872722516, guid: 1bea9896d0e384840b580699f1ec5356,
         type: 3}
@@ -2053,7 +2054,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.43847656, y: 0}
+  m_AnchoredPosition: {x: 0.5, y: 0}
   m_SizeDelta: {x: 0.87731934, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871753363

@@ -18,6 +18,8 @@ public class GameController : MonoBehaviour
 	TableObj table;
 	[Space]
 	[SerializeField]
+	int cardAmount;
+	[SerializeField]
 	float cardSpeed;
 
 	int scoreCounter = 0;
@@ -25,6 +27,7 @@ public class GameController : MonoBehaviour
 
 	public SpritesCard SpritesCard { get => spritesCard; }
 	public float CardSpeed { get => cardSpeed; }
+	public int CardAmount{ get => cardAmount; }
 	public TableObj GameTable { get => table; }
 
 	private void OnValidate()
@@ -37,6 +40,8 @@ public class GameController : MonoBehaviour
 			Debug.LogError("table bad value");
 		if (cardSpeed <= 0)
 			cardSpeed = 1;
+		if (cardAmount <= 0)
+			cardAmount = 13;
 	}
 
 	private void Awake()
@@ -90,6 +95,8 @@ public class GameController : MonoBehaviour
 
 	public void CardHitted(CardObj card)
 	{
+		if (card.transform.parent == null)
+			return;
 		scoreCounter++;
 		UIController.Instance.SetScore(scoreCounter);
 		card.transform.parent = null;

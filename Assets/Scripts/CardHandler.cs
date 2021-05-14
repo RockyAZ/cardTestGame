@@ -129,8 +129,19 @@ public class CardHandler : MonoBehaviour
 			if (cardParent.GetChild(i).GetComponent<CardObj>().CardType == specialType)
 				specialCounter++;
 		//formula calculate special and normal width
-		moveSpecialLength = (Mathf.Abs(maxX - minX) / cardParent.childCount) * 1.5f;
-		moveLength = Mathf.Abs((maxX - minX) - moveSpecialLength * specialCounter) / (cardParent.childCount - specialCounter);
+		//if every card can have full size and fit table
+		if (Mathf.Abs(maxX - minX) < cardParent.GetChild(0).transform.localScale.x * 2 * cardParent.childCount)
+		{
+			moveSpecialLength = (Mathf.Abs(maxX - minX) / cardParent.childCount) * 1.5f;
+			moveLength = Mathf.Abs((maxX - minX) - moveSpecialLength * specialCounter) / (cardParent.childCount - specialCounter);
+		}
+		else
+		{
+			moveLength = moveSpecialLength = cardParent.GetChild(0).transform.localScale.x * 2;
+			//get future length of all cards
+			currentX = moveSpecialLength * (cardParent.childCount - 1);
+			currentX = -(currentX / 2);
+		}
 
 		for (int i = 0; i < cardParent.childCount; i++)
 		{
