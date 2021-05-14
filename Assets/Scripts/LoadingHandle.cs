@@ -17,6 +17,5 @@ public class LoadingHandle : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         AsyncOperation operation = SceneManager.LoadSceneAsync("MainScene");
-        loadCanvas.SetActive(false);
     }
 }
